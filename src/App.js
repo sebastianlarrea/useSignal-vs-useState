@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import AppSignal from './useSignal/AppSignal'
+import AppState from './useState/AppState'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <h1>AppState</h1>
+            <AppState />
+            <h1>AppSignals</h1>
+            <AppSignal />
+        </>
+    )
 }
 
-export default App;
+export default App
